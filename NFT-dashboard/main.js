@@ -1,6 +1,13 @@
-Moralis.initialize("jAcAyruzIchs5uZcbzGAhz2yDnoHxuOzlT8yBC4a");
-Moralis.serverURL = "https://gt4vx0s0or1s.usemoralis.com:2053/server";
+//Moralis.initialize("jAcAyruzIchs5uZcbzGAhz2yDnoHxuOzlT8yBC4a");
+//Moralis.serverURL = "https://gt4vx0s0or1s.usemoralis.com:2053/server";
+
+appId= "jAcAyruzIchs5uZcbzGAhz2yDnoHxuOzlT8yBC4a";
+serverURL= "https://gt4vx0s0or1s.usemoralis.com:2053/server";
+Moralis.start({ serverURL, appId});
+
+
 const CONTRACT_ADDRESS = "0x339a49bae35cd40b0c82d6edb6ec366573383a87"
+
 
 function fetchNFTMetadata(NFTs) {
     let promises = [];
